@@ -1,0 +1,17 @@
+# Exported from Render on 2025-06-12T17:29:42Z
+services:
+- type: web
+  name: MALVIN-XD-MONSTER-SALLA
+  runtime: node
+  repo: https://github.com/MARCE255/MALVIN-XD-MONSTER-SALLA
+  plan: free
+  envVars:
+  - key: OWNER_NUMBER
+    sync: false
+  - key: SESSION_ID
+    sync: false
+  region: oregon
+  buildCommand: npm install
+  startCommand: npm start
+  autoDeployTrigger: commit
+version: "1"
